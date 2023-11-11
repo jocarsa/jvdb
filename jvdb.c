@@ -6,7 +6,10 @@ int main(int argc,char *argv[]){
     char *operacion = argv[1];
     char *basededatos = argv[2];
     char *coleccion = argv[3];
-    
+    /*
+        Uso:
+        jvdb.exe [operacion] [basededatos] [coleccion] [operacion] [documento] [contenido]
+    */
     if(strcmp(operacion,"select") == 0){
         char *documento = argv[4];
         char ruta[100];
